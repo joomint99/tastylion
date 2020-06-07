@@ -17,12 +17,12 @@ var position={
 var content = {
     동아치 : [
         '<div class="iw_inner">',
-        '<p>동네 아저씨 치킨</p>',
+        '<p class = "name">동네 아저씨 치킨</p>',
         '</div>'
     ].join(''),
     돌쇠아저씨 : [
         '<div class="iw_inner">',
-        '<p>돌쇠 아저씨</p>',
+        '<p class = "name">돌쇠 아저씨</p>',
         '</div>'
     ].join('')
 }
