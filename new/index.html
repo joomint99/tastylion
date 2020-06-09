@@ -9,26 +9,23 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
         
-        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=rqegw1hm50"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c28a3949d9e0d628705c4c413053ada1"></script>
         <title>맛있는 사자</title>
 
     </head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        #title{
+            font-family: 'Black Han Sans', sans-serif;
+        }
     </style>
         
     <body>
         <div class ="container">
         <h1 id = "title">맛있는 사자</h1>
-        
-        <div id="map" style="width:90%;height:400px;"></div>
-        <div id="button">
-        <div class="alone"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">혼자서도 편하게🙋🏻‍♂</a></div>
-        <div class="date"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">연인 또는 여럿이💗</a></div>
-        <div class="insta"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">인스타 갬성🤳🏻</a></div>
-        <div class="bobyak"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">밥약은 여기서🍚</a></div>
+        <div id="map" style="width:100%;height:600px;"></div>
+        <div id="clickLatlng"></div>
         </div>
-    </div>
     </body>
     <script src="script.js"></script>
 </HTML>
