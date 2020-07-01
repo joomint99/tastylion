@@ -5,7 +5,7 @@ var options = { //지도를 생성할 때 필요한 기본 옵션
 };
 
 var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-/*
+
 // 지도를 클릭한 위치에 표출할 마커입니다
 var marker = new kakao.maps.Marker({ 
     // 지도 중심좌표에 마커를 생성합니다 
@@ -54,8 +54,8 @@ var infowindow = new kakao.maps.InfoWindow({
   
 // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
 infowindow.open(map, marker); 
-*/
 
+/*
 // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
 var positions = [
     {
