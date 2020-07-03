@@ -122,6 +122,94 @@ var positions = [
         latlng: new kakao.maps.LatLng(37.58243811816101, 126.99968866093825),
         content: '가게가 예쁘고 메뉴가 다양함+맛있음',
         type : "디저트"
+    },
+    {
+        title: '틈새라면',	
+        latlng: new kakao.maps.LatLng(37.58314764806862,126.99917918922908),
+        content:'라면이라서 혼밥하기 좋음',
+        type : '혼밥'
+    },
+    {
+
+    
+        title: '밴프',	
+        latlng: new kakao.maps.LatLng(37.58803096540207,126.99600040901309),
+        content:'밥약의 성지',
+        type: '밥약'
+    },
+    {
+        title: '후쿠후쿠',	
+        latlng: new kakao.maps.LatLng(37.588889116926666,126.99486529274834),
+        content: '여기도 밥약의 성지, 가성비가 특히 좋음',
+        type:'밥약'
+    },
+    {
+        title:'청춘직화',	
+        latlng: new kakao.maps.LatLng(37.5886909036796, 126.99498419122288),
+        content:'12~2시 같이 사람들 붐빌 때 말고, 3~5시쯤에 가면, 혼자 혼밥하기 안성맞춤',
+        type:'혼밥'
+    },
+    {
+        title:'쇼타돈부리',	
+        latlng: new kakao.maps.LatLng(37.58887336269152, 126.99517665969515),
+        content:'일식 맛집, 가끔씩 웨이팅(?)같은 거 존재',
+        type:'JMT'
+    },
+    {
+        title:'후라이팬',
+        latlng: new kakao.maps.LatLng(37.588997227115016, 126.99466431247595),
+        content:'미친 가성비의 양식집, 맛있음',
+        type:'JMT'
+    },
+    {
+        title:'대가곱창',	
+        latlng: new kakao.maps.LatLng(37.5892652546246, 126.9942849911189),
+        content:'곱창에 소주 한잔 하기 좋은 곳',
+        type:'JMT'
+    },
+    {
+        title:'우보장',
+        latlng: new kakao.maps.LatLng(37.58810530475156, 126.99622685061001), 
+        content:'동방이나 과방에서 자주 시켜 먹는 중국집',
+        type:'JMT'
+
+    },
+    {
+        title:'명륜쭈꾸미',
+        latlng: new kakao.maps.LatLng(37.58608934584598, 126.99664020439691),
+        content:'회식하러 자주 가는 곳. 삼겹살에 소주하기 좋은 곳',
+        type:'JMT'
+    },
+    {
+        title:'명륜진사갈비',
+        latlng: new kakao.maps.LatLng(37.58536179723565, 126.99675628619416),
+        content:'명륜당 앞에 있는 근본 고깃집. 무한으로 즐길 수 있음',
+        type:'JMT'
+    },
+    {
+        title:'화로상회',
+        latlng: new kakao.maps.LatLng(37.584276104219704, 126.99689502411267),
+        content:'명진갈의 갈비가 질릴 때 먹으러 가는 곳. 여기도 고기 무한 리필',
+        type:'JMT'
+    },
+    {
+        title:'혼가츠',
+        latlng: new kakao.maps.LatLng(37.583388666354, 127.00026605676283),
+        content:'왕돈까스 가성비 굿. 갠적으로 돈돈정보다 자주 가는 곳',
+        type:'JMT'
+    },
+    {
+        title:'호호식당',
+        latlng: new kakao.maps.LatLng(37.58190202740454, 127.00001415167408),
+        content:'소문으로만 들었던 전설의 식당. 비싼 만큼 맛있다고 함',
+        type:'JMT'
+    },
+    {
+        title:'멘야산다이메',
+        latlng: new kakao.maps.LatLng(37.58180066528546, 126.99971696690255),
+        content:'일식라멘집. 가성비 괜찮다. 인스타에 찍어서 올리면,<br>음료수까지 주니, 그 가격까지 고려하면 가성비 나름 괜찮다.',
+        type:'JMT'
+
     }
 ];
 
@@ -134,7 +222,10 @@ for (var i = 0; i < positions.length; i ++) {
 
     // 마커에 표시할 인포윈도우를 생성합니다 
     var infowindow = new kakao.maps.InfoWindow({
-        content: positions[i].content // 인포윈도우에 표시할 내용
+        position: positions[i].LatLng,
+        content: positions[i].content+'<br>'+'type: '+positions[i].type, // 인포윈도우에 표시할 내용
+        
+        
     });
 
     // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
