@@ -253,6 +253,8 @@ var positions = [
     }
 
 ];
+
+document.getElementById("num").innerText='🍴 추가된 맛집 : '+positions.length+'개 🍴';
 var imageSrc = 0;
 for (var i = 0; i < positions.length; i ++) {
 
@@ -430,6 +432,8 @@ $( '#back-top' ).click( function() {
 	$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
 	return false;
 } );
+
+
 
 /*
 // 지도에 클릭 이벤트를 등록합니다

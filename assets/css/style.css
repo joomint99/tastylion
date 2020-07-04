@@ -30,6 +30,12 @@
     justify-content: space-between;
 }
 
+#num{
+    font-size:25px;
+    font-family: 'Black Han Sans', sans-serif;
+    margin:10px;
+    float:right;
+}
 .white-bg {
     background: #ffffff
 }
