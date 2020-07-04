@@ -25,6 +25,7 @@
 
 
 #button {
+    width:90%;
     display: grid;
     grid-template-columns: repeat(5, 150px);
     justify-content: space-between;
@@ -543,6 +544,7 @@ hr {
 
 @media (max-width: 1200px) {
     #button {
+        width:90%;
         display: grid;
         grid-template-columns: repeat(3, 150px);
         grid-template-rows:2;
