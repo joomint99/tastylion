@@ -11,6 +11,7 @@
     font-weight: 800;
 }
 .example_c {
+    
     font-size:25px;
     font-family: 'Black Han Sans', sans-serif;
     color: #494949;
@@ -21,7 +22,7 @@
     border: none;
     display: inline-block;
     transition: all 0.2s ease 0s;
-    }
+}
 
 
 #button {
@@ -29,6 +30,7 @@
     display: grid;
     grid-template-columns: repeat(5, 150px);
     justify-content: space-between;
+    margin:auto;
 }
 
 #num{
@@ -7057,6 +7059,7 @@ del {
     @media (min-width: 768px) and (max-width: 1024px) {
     
         #button {
+            margin:auto;
             width:90%;
             display: grid;
             grid-template-columns: repeat(3, 150px);
@@ -7076,6 +7079,7 @@ del {
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
         #button {
+            margin:auto;
             width:90%;
             display: grid;
             grid-template-columns: repeat(3, 150px);
@@ -7095,6 +7099,7 @@ del {
     @media (min-width: 481px) and (max-width: 767px) {
     
         #button {
+            margin:auto;
             width:90%;
             display: grid;
             grid-template-columns: repeat(2, 150px);
@@ -7114,6 +7119,7 @@ del {
     @media (min-width: 320px) and (max-width: 480px) {
     
         #button {
+            margin:auto;
             width:90%;
             display: grid;
             grid-template-columns: repeat(2, 150px);
