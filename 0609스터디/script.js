@@ -210,7 +210,44 @@ var positions = [
         content:'일식라멘집. 가성비 괜찮다. 인스타에 찍어서 올리면,<br>음료수까지 주니, 그 가격까지 고려하면 가성비 나름 괜찮다.',
         type:'JMT'
 
+    },
+    {
+        title:'파스타마켓',	
+        latlng: new kakao.maps.LatLng(37.5820506848078, 127.00124251945296),
+        content:'캐주얼하고 개성있는 메뉴와 아늑한 분위기까지, 연인과 오기를 추천한다고 함.',
+        type:'데이트 무드'
+    },
+    {
+	title:'들풀',	
+        latlng: new kakao.maps.LatLng(37.58259579095251, 127.0005915454649),
+        content:'자극적이지 않은 한정식집',
+        type:'밥약'
+    },
+    {
+        title:'다다미소바',	
+        latlng: new kakao.maps.LatLng(37.58172182630028, 127.00075003691735),
+        content:'돈부리와 우동이 맛있는 집',
+        type:'JMT'
+    },
+    {
+        title:'이스탄불',	
+        latlng: new kakao.maps.LatLng(37.582309725782125, 127.00053493619653),
+        content:'국내 최초 터키 요리 전문점답게 다양한 메뉴와 내공을 자랑한다.',
+        type:'JMT'
+    },
+    {
+        title:'구스타파스',	
+        latlng: new kakao.maps.LatLng(37.58416802541081, 127.00032832878968),
+        content:'스페인 음식과 와인이 있는 데이트를 원한다면 꼭 가야할 곳.',
+        type:'데이트 무드'
+    },
+    {
+        title:'피터팬스테이크',	
+        latlng: new kakao.maps.LatLng(37.58416802541081, 127.00032832878968),
+        content:'합리적인 가격에 맛있는 스테이크와 파스타가 있는 아기자기한 이탈리안 레스토랑.',
+        type:'JMT'
     }
+
 ];
 
 for (var i = 0; i < positions.length; i ++) {
