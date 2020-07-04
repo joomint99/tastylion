@@ -541,11 +541,19 @@ hr {
     margin: 0
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
+    #button {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows:2;
+        justify-content: space-between;
+    }
     .border-btn {
         display: none
     }
 }
+
+
 
 .border-btn::before {
     border: 1px solid transparent;
@@ -570,9 +578,7 @@ hr {
     border: 1px solid transparent
 }
 
-.breadcrumb>.active {
-    color: #888
-}
+
 
 #scrollUp,
 #back-top {
@@ -615,12 +621,11 @@ hr {
     position: fixed;
     top: 0;
     width: 100%;
-    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    
     z-index: 9999;
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+;
     background: #fff
 }
 
@@ -2526,23 +2531,7 @@ hr {
     background: #fff
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-area {
-        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
-    }
-}
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .header-area {
-        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
-    }
-}
-
-@media (max-width: 575px) {
-    .header-area {
-        box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1)
-    }
-}
 
 .header-area .header-top {
     border-bottom: 1px solid #eeeeee
@@ -5918,11 +5907,6 @@ hr {
     justify-content: start
 }
 
-.overlay::before {
-    background-image: -moz-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%);
-    background-image: -webkit-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%);
-    background-image: -ms-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, #000 100%)
-}
 
 .sample-text-area {
     background: #fff;
@@ -6512,7 +6496,7 @@ del {
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+
     cursor: pointer
 }
 
