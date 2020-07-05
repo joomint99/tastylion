@@ -7028,6 +7028,15 @@ del {
 
 #btn3:hover{color:#f25353}
 
+#head{
+    padding:7px 7px 3px 7px;
+    width:100%;
+    background-color: #0b0b1d;
+    text-align:right;
+    font-size:20px;
+    color:#9FA8C3; 
+    font-family: 'Black Han Sans', sans-serif;
+}
 
 
     /*
