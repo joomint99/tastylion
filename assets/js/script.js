@@ -250,8 +250,37 @@ var positions = [
         latlng: new kakao.maps.LatLng(37.58416802541081, 127.00032832878968),
         content:'합리적인 가격에 맛있는 스테이크와 파스타가 있는 아기자기한 이탈리안 레스토랑🥩',
         type:'JMT'
-    }
-
+    },
+    {
+        title:'라라옥',   
+        latlng: new kakao.maps.LatLng(37.5839296,127.0013395),
+        content:'루프탑이 있는 인스타 감성 맛집! 특별한 날 방문 추천:)',
+        type:'데이트 무드'
+    },
+    {
+        title:'미분당',   
+        latlng: new kakao.maps.LatLng(37.58236827984193 ,126.99833575275187),
+        content:'1인용 좌석만 있는 완전한 혼밥 전용 쌀국수집. 국물 맛이 좋다 🍴',
+        type:'혼밥'
+    },
+    {
+        title:'소친친',   
+        latlng: new kakao.maps.LatLng(37.58260254965213,126.99976508000947),
+        content:'우리가 알던 중국 음식이랑은 다른, 진짜 중국음식집! 꿔바로우 존맛👍',
+        type:'JMT'
+    },
+    {
+        title:'후쿠후쿠',   
+        latlng: new kakao.maps.LatLng(37.588880107370514,126.99487378516434),
+        content:'카레, 덮밥 등을 파는 일본 음식점. 사케동이 맛있다🧡',
+        type:'혼밥'
+    },
+    {
+        title:'에그썸',   
+        latlng: new kakao.maps.LatLng( 37.58172623742725,127.00476627261492 ),
+        content:'요즘 핫한 오므라이스집! 연극보고 먹으러가면 굿',
+        type:'데이트 무드'
+    },
 ];
 
 document.getElementById("num").innerText='🍴 추가된 맛집 : '+positions.length+'개 🍴';
